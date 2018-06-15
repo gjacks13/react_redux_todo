@@ -4,8 +4,8 @@ import { Provider } from 'react-redux';
 import todos from './reducers/todos';
 import visibilityFilter from './reducers/visibilityFilter';
 import VisibleTodoList from './containers/VisibleTodoList';
-import AddTodo from './components/AddTodo';
-import Footer from './components/Footer';
+import AddTodo from './components/AddTodo/AddTodo';
+import FilterBar from './components/FilterBar';
 import logo from './logo.svg';
 import './App.css';
 
@@ -19,14 +19,14 @@ class App extends Component {
     return (
       <Provider store={createStore(todoApp)}>
         <div className="App">
-          <header className="App-header">
+          <header className="App-header float">
             <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Welcome to React</h1>
+            <h1>Todo App</h1>
           </header>
 
           <AddTodo />
+          <FilterBar />
           <VisibleTodoList />
-          <Footer />
         </div >
       </Provider>
     );

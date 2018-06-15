@@ -1,0 +1,29 @@
+.todo-item {
+  box-sizing: border-box;
+  padding: 20px;
+  border: 2px solid #F8F8F8;
+  margin-top: -2px;
+  text-align: left;
+  font-size: 1.5em;
+  background-image: linear-gradient(to left, #fff 50%, #F8F8F8 50%);
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  transition: all 500ms ease;
+}
+
+.todo-item:hover {
+  cursor: pointer;
+}
+
+.todo-checkbox {
+  margin-right: 10px;
+}
+
+.completed {
+  text-decoration: line-through solid #79993a;
+  color: rgba(58, 121, 153, 0.473);
+  transition: all 500ms ease;
+  background-position: bottom left;
+  /* background-color: #F8F8F8; */
+}

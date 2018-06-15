@@ -1,15 +1,25 @@
+body {
+  font-family: 'Comfortaa', cursive;
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 50px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: #3a7999;
+  background-position: 0 -140px;
+  background-size: 100%;
+  -webkit-box-shadow: 0px 2px 38px -2px rgba(0,0,0,0.47);
+  -moz-box-shadow: 0px 2px 38px -2px rgba(0,0,0,0.47);
+  box-shadow: 0px 2px 38px -2px rgba(0,0,0,0.47);
+  height: 20vh;
+  width: 100%;
   padding: 20px;
   color: white;
 }
@@ -18,11 +28,65 @@
   font-size: 1.5em;
 }
 
-.App-intro {
-  font-size: large;
+.float {
+  -webkit-transition:all .3s ease-out;
+  -moz-transition:all .3s ease-out;
+  -ms-transition:all .3s ease-out;
+  -o-transition:all .3s ease-out;
+  transition:all .3s ease-out;
+}
+
+.float:hover {
+  -webkit-transform:translate(0px,-3px);
+  -moz-transform:translate(0px,-3px);
+  -ms-transform:translate(0px,-3px);
+  -o-transform:translate(0px,-3px);
+  transform:translate(0px,-3px);
 }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@media screen 
+and (max-height: 345px)
+{
+  .App-header {
+    height: 45vh;
+  }
+}
+
+@media screen 
+and (max-height: 266px)
+{
+  .App-header {
+    height: 60vh;
+  }
+}
+
+@media screen 
+and (min-height: 346px)
+and (max-height: 460px) {
+  .App-header {
+    height: 35vh;
+  }
+}
+
+@media screen 
+and (min-height: 461px)
+and (max-height: 620px)
+{
+  .App-header {
+    height: 25vh;
+  }
+}
+
+@media screen 
+and (max-height: 668px)
+and (max-width: 224px)
+{
+  .App-header {
+    height: 35vh;
+  }
 }

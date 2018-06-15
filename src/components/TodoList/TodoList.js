@@ -6,7 +6,7 @@ const TodoList = ({
   todos = [],
   onTodoClick
 }) => (
-  <ul>
+  <ul className='todo-list'>
     {todos.map(todo => (
       <Todo 
         key={todo.id} 
